@@ -33,7 +33,7 @@ class Mail : AppCompatActivity() {
         //Boton Back
         BackM = findViewById(R.id.btnBackM)
         BackM.setOnClickListener {
-            val openD: Intent = Intent(this, Credenciales::class.java)
+            val openD: Intent = Intent(this, DatosPersonales::class.java)
             startActivity(openD)
         }
 

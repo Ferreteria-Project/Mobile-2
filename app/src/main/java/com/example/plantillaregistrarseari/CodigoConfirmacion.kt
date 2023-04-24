@@ -11,6 +11,7 @@ import android.widget.Button
 import android.widget.EditText
 
 lateinit var BackCC:Button
+lateinit var SiguienteCC: Button
 
 
 class CodigoConfirmacion : AppCompatActivity() {
@@ -32,6 +33,13 @@ class CodigoConfirmacion : AppCompatActivity() {
         BackCC = findViewById(R.id.btnBackCC)
         BackCC.setOnClickListener {
             val openD: Intent = Intent(this, Mail::class.java)
+            startActivity(openD)
+        }
+
+        //Btn siguiente
+        SiguienteCC = findViewById(R.id.btnSiguienteCC)
+        SiguienteCC.setOnClickListener {
+            val openD: Intent = Intent(this, Credenciales::class.java)
             startActivity(openD)
         }
     }

@@ -36,7 +36,7 @@ class Credenciales : AppCompatActivity() {
         //Boton Back
         backC = findViewById(R.id.btnBackC)
         backC.setOnClickListener {
-            val openC: Intent = Intent(this, DatosPersonales::class.java)
+            val openC: Intent = Intent(this, Mail::class.java)
             startActivity(openC)
         }
 
@@ -71,7 +71,7 @@ class Credenciales : AppCompatActivity() {
             } else if (encryptedPasswordC != encryptedPassword2C) {
                 TPass2C.error = "Las contraseñas ingresadas no coinciden"
             } else {
-                val open: Intent = Intent(this, Mail::class.java)
+                val open: Intent = Intent(this, FotoPerfil::class.java)
                 startActivity(open)
             }
         }

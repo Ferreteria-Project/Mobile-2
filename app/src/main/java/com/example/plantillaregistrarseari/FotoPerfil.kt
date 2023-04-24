@@ -23,7 +23,7 @@ class FotoPerfil : AppCompatActivity() {
         //Boton Back
         backC = findViewById(R.id.btnBackF)
         backC.setOnClickListener {
-            val openC: Intent = Intent(this, DatosPersonales::class.java)
+            val openC: Intent = Intent(this, Credenciales::class.java)
             startActivity(openC)
         }
 

@@ -73,7 +73,7 @@ class DatosPersonales : AppCompatActivity(), View.OnClickListener {
                 if (fechaSeleccionada.before(fechaMinima) || fechaSeleccionada.after(fechaActual)) {
                     Tfecha.error = "Ingrese una fecha de nacimiento válida."
                 } else {
-                    val openD: Intent = Intent(this, Credenciales::class.java)
+                    val openD: Intent = Intent(this, FotoPerfil::class.java)
                     startActivity(openD)
                 }
             }

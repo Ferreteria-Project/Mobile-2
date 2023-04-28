@@ -6,14 +6,12 @@ import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.icu.text.SimpleDateFormat
 import android.icu.util.Calendar
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Patterns
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
-import android.widget.DatePicker
 import android.widget.EditText
 import java.util.*
 import kotlin.properties.Delegates
@@ -30,6 +28,9 @@ var ano by Delegates.notNull<Int>()
 class DatosPersonales : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        setTheme(R.style.splashcreen)
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_datos_personales)
 

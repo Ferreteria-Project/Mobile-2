@@ -27,8 +27,12 @@ var ano by Delegates.notNull<Int>()
 
 class DatosPersonales : AppCompatActivity(), View.OnClickListener {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
+
+        Thread.sleep(2000)
         setTheme(R.style.splashcreen)
 
         super.onCreate(savedInstanceState)

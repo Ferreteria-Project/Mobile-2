@@ -20,6 +20,7 @@ lateinit var Tfecha: EditText
 lateinit var Ttelefono: EditText
 lateinit var siguienteD: Button
 lateinit var Tnombre: EditText
+lateinit var BackD:Button
 
 var dia by Delegates.notNull<Int>()
 var mes by Delegates.notNull<Int>()
@@ -55,6 +56,13 @@ class DatosPersonales : AppCompatActivity(), View.OnClickListener {
         //Codigo de pais en campo telefono
         Ttelefono = findViewById(R.id.txtTelefonoD)
         Ttelefono.setText("+503 ")
+
+        //btnBack
+        BackD = findViewById(R.id.btnBackD)
+        BackD.setOnClickListener {
+            val openD: Intent = Intent(this, LogIn::class.java)
+            startActivity(openD)
+        }
 
         //Boton siguiente
         Tnombre = findViewById(R.id.txtNombreD)
